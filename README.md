@@ -1,4 +1,4 @@
-# (https://stock-photo-seven.vercel.app)
+# https://stock-photo-seven.vercel.app
 
 
 # Getting Started with Create React App
