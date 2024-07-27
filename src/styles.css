@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* global tailwind css */
+.section {
+  @apply min-h-screen bg-gray-200;
+}
+
+.section-center {
+  @apply max-w-[1170px] mx-auto;
+}
+
+.section-title {
+  @apply font-extrabold text-5xl text-center text-slate-900 capitalize mb-[1rem];
+}
+
+.logo {
+  @apply font-extrabold text-2xl text-center text-gray-100 bg-green-700 px-[.3rem] py-[.1rem] rounded-md;
+}
+
+.hero-area {
+  /* @apply bg-[url('../public/images/hero.jpg') bg-gradient-to-r from-purple-500 to-pink-500] bg-center bg-cover bg-opacity-80  h-[40rem] w-full flex flex-col items-center justify-center; */
+}
+
+.hero-area {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://pixabay.com/get/g5f124c82877ef464c52ca1ab68869e4695c0e54b97a49411bc065fd0e50aa7f43d3c79bfbecb0eab8c4ebf80ef0d1324d1db1cdbe930a0b1478ae2d14c786714_1280.jpg")
+      center/cover no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+}
